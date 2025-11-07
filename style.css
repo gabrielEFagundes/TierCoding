@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+:root{
+  --background-darkmode: #000;
+  --text-darkmode: #eef1f5;
+  --totalSection-darkmode: #292a2e;
+  --sectionCard-darkmode: #717174;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'JetBrains Mono', monospace;
+  padding: 40px;
+  margin: 0;
+}
+
+.background-darkmode{
+  background-color: var(--background-darkmode);
+}
+
+.text-darkmode{
+  color: var(--text-darkmode);
+}
+
+.totalCard-darkmode{
+  background-color: var(--totalSection-darkmode);
+}
+
+.cardSection-darkmode{
+  background-color: var(--sectionCard-darkmode);
+}
+
+.draggable {
+  cursor: move;
+  border-radius: 8px;
+  user-select: none;
+  transition: transform 0.2s;
+  margin-bottom: 10px;
+}
+
+.draggable.dragging {
+  opacity: 0.6;
+  transform: scale(1.05);
+}

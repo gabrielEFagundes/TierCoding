@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag and Drop com Logs</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+
+    <header class="flex justify-evenly items-center mb-10">
+        <h1 class="font-bold text-xl" id="title">TierList - Linguagens de <span class="text-blue-500 font-extrabold">Programação</span></h1>
+        <button class="bg-black border border-white text-white p-2 rounded-4xl cursor-pointer" id="darkmode">
+            Darkmode
+        </button>
+    </header>
+
+    <div class="bg-neutral-300 rounded-xl p-10" id="totalCard">
+        <div class="flex justify-evenly">
+            <section class="flex gap-2 bg-neutral-200 p-4 rounded-xl sectionCard">
+                <div>
+                    <img src="https://skill-icons-v2.vercel.app/api/icons?i=java" alt="Java" class="draggable shadow-md rounded-xl" draggable="true" id="java">
+                    <img src="https://skill-icons-v2.vercel.app/api/icons?i=python" alt="Python" class="draggable shadow-md rounded-xl" draggable="true" id="python">
+                    <img src="https://skill-icons-v2.vercel.app/api/icons?i=c" alt="Great Father C" class="draggable shadow-md rounded-xl" draggable="true" id="c">
+                    <img src="https://skill-icons-v2.vercel.app/api/icons?i=cpp" alt="C++" class="draggable shadow-md rounded-xl" draggable="true" id="cpp">
+                    <img src="https://skill-icons-v2.vercel.app/api/icons?i=cs" alt="CSharp" class="draggable shadow-md rounded-xl" draggable="true" id="cs">
+                    <img src="https://skill-icons-v2.vercel.app/api/icons?i=holyc" alt="HolyC" class="draggable shadow-md rounded-xl" draggable="true" id="holyc">
+                    <img src="https://skill-icons-v2.vercel.app/api/icons?i=javascript" alt="JavaScript" class="draggable shadow-md rounded-xl" draggable="true" id="javascript">
+                    <img src="https://skill-icons-v2.vercel.app/api/icons?i=typescript" alt="TypeScript" class="draggable shadow-md rounded-xl" draggable="true" id="typescript">
+                    <img src="https://skill-icons-v2.vercel.app/api/icons?i=ruby" alt="Ruby" class="draggable shadow-md rounded-xl" draggable="true" id="ruby">
+                    <img src="https://skill-icons-v2.vercel.app/api/icons?i=lua" alt="Lua" class="draggable shadow-md rounded-xl" draggable="true" id="lua">
+                </div>
+                <div>
+                    <img src="https://skill-icons-v2.vercel.app/api/icons?i=kotlin" alt="Kotlin" class="draggable shadow-md rounded-xl" draggable="true" id="kotlin">
+                    <img src="https://skill-icons-v2.vercel.app/api/icons?i=swift" alt="Swift" class="draggable shadow-md rounded-xl" draggable="true" id="swift">
+                    <img src="https://skill-icons-v2.vercel.app/api/icons?i=flutter" alt="Flutter" class="draggable shadow-md rounded-xl" draggable="true" id="flutter">
+                    <img src="https://skill-icons-v2.vercel.app/api/icons?i=reactnative" alt="React Native" class="draggable shadow-md rounded-xl" draggable="true" id="reactnative">
+                    <img src="https://skill-icons-v2.vercel.app/api/icons?i=mysql" alt="MySQL" class="draggable shadow-md rounded-xl" draggable="true" id="mysql">
+                    <img src="https://skill-icons-v2.vercel.app/api/icons?i=mongodb" alt="MongoDb" class="draggable shadow-md rounded-xl" draggable="true" id="mongodb">
+                    <img src="https://skill-icons-v2.vercel.app/api/icons?i=rust" alt="Rust" class="draggable shadow-md rounded-xl" draggable="true" id="rust">
+                    <img src="https://skill-icons-v2.vercel.app/api/icons?i=html" alt="HTML" class="draggable shadow-md rounded-xl" draggable="true" id="html">
+                    <img src="https://skill-icons-v2.vercel.app/api/icons?i=css" alt="CSS" class="draggable shadow-md rounded-xl" draggable="true" id="css">
+                    <img src="https://skill-icons-v2.vercel.app/api/icons?i=powershell" alt="BatchFile" class="draggable shadow-md rounded-xl" draggable="true" id="powershell">
+                </div>
+            </section>
+            <section class="flex flex-col gap-2 bg-neutral-200 p-4 rounded-xl sectionCard">
+                <div class="bg-neutral-200">
+                    <div class="bg-red-200 text-center text-red-400 text-xl p-10 rounded-t-xl">
+                        INCRÍVEL!
+                    </div>
+                    <div class="bg-orange-200 text-center text-orange-400 text-xl p-10">
+                        Muito boa!
+                    </div>
+                    <div class="bg-yellow-200 text-center text-yellow-400 text-xl p-10">
+                        Interessante.
+                    </div>
+                    <div class="bg-green-200 text-center text-green-400 text-xl p-10">
+                        Meh...
+                    </div>
+                    <div class="bg-blue-200 text-center text-blue-400 text-xl p-10">
+                        LIXO!
+                    </div>
+                    <div class="bg-gray-300 text-center text-gray-400 text-xl p-10 rounded-b-xl">
+                        Não uso
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
