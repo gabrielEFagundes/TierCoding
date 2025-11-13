@@ -21,7 +21,7 @@
     <div class="bg-neutral-300 rounded-xl p-10" id="totalCard">
         <div class="flex justify-evenly">
             <section class="flex gap-2 bg-neutral-200 p-4 rounded-xl sectionCard">
-                <div>
+                <div class="dragzone">
                     <img src="https://skill-icons-v2.vercel.app/api/icons?i=java" alt="Java" class="draggable shadow-md rounded-xl" draggable="true" id="java">
                     <img src="https://skill-icons-v2.vercel.app/api/icons?i=python" alt="Python" class="draggable shadow-md rounded-xl" draggable="true" id="python">
                     <img src="https://skill-icons-v2.vercel.app/api/icons?i=c" alt="Great Father C" class="draggable shadow-md rounded-xl" draggable="true" id="c">
@@ -33,7 +33,7 @@
                     <img src="https://skill-icons-v2.vercel.app/api/icons?i=ruby" alt="Ruby" class="draggable shadow-md rounded-xl" draggable="true" id="ruby">
                     <img src="https://skill-icons-v2.vercel.app/api/icons?i=lua" alt="Lua" class="draggable shadow-md rounded-xl" draggable="true" id="lua">
                 </div>
-                <div>
+                <div class="dragzone">
                     <img src="https://skill-icons-v2.vercel.app/api/icons?i=kotlin" alt="Kotlin" class="draggable shadow-md rounded-xl" draggable="true" id="kotlin">
                     <img src="https://skill-icons-v2.vercel.app/api/icons?i=swift" alt="Swift" class="draggable shadow-md rounded-xl" draggable="true" id="swift">
                     <img src="https://skill-icons-v2.vercel.app/api/icons?i=flutter" alt="Flutter" class="draggable shadow-md rounded-xl" draggable="true" id="flutter">
@@ -46,25 +46,31 @@
                     <img src="https://skill-icons-v2.vercel.app/api/icons?i=powershell" alt="BatchFile" class="draggable shadow-md rounded-xl" draggable="true" id="powershell">
                 </div>
             </section>
-            <section class="flex flex-col gap-2 bg-neutral-200 p-4 rounded-xl sectionCard">
-                <div class="bg-neutral-200">
-                    <div class="bg-red-200 text-center text-red-400 text-xl p-10 rounded-t-xl">
+            <section class="flex flex-col gap-2 bg-neutral-200 p-1 rounded-xl sectionCard">
+                <div class="bg-neutral-200 rounded-4xl">
+                    <div class="bg-red-200 text-red-400 text-center text-xl rounded-t-xl px-10 py-2 max-w-60">
                         INCRÍVEL!
+                        <div class="py-10 droppable flex flex-wrap justify-center gap-1" id="stier"></div>
                     </div>
-                    <div class="bg-orange-200 text-center text-orange-400 text-xl p-10">
+                    <div class="bg-orange-200 text-orange-400 text-center text-xl px-10 py-2 max-w-60">
                         Muito boa!
+                        <div class="py-10 droppable flex flex-wrap justify-center gap-1" id="atier"></div>
                     </div>
-                    <div class="bg-yellow-200 text-center text-yellow-400 text-xl p-10">
-                        Interessante.
+                    <div class="bg-yellow-200 text-yellow-400 text-center text-xl px-10 py-2 max-w-60">
+                        Interessante
+                        <div class="py-10 droppable flex flex-wrap justify-center gap-1" id="btier"></div>
                     </div>
-                    <div class="bg-green-200 text-center text-green-400 text-xl p-10">
+                    <div class="bg-green-200 text-green-400 text-center text-xl px-10 py-2 max-w-60">
                         Meh...
+                        <div class="py-10 droppable flex flex-wrap justify-center gap-1" id="ctier"></div>
                     </div>
-                    <div class="bg-blue-200 text-center text-blue-400 text-xl p-10">
-                        LIXO!
+                    <div class="bg-blue-200 text-blue-400 text-center text-xl px-10 py-2 max-w-60">
+                        LIXO!!
+                        <div class="py-10 droppable flex flex-wrap justify-center gap-1" id="ftier"></div>
                     </div>
-                    <div class="bg-gray-300 text-center text-gray-400 text-xl p-10 rounded-b-xl">
+                    <div class="bg-gray-300 text-gray-400 text-center text-xl rounded-b-xl px-10 py-2 max-w-60">
                         Não uso
+                        <div class="py-10 droppable flex flex-wrap justify-center gap-1" id="notier"></div>
                     </div>
                 </div>
             </section>
